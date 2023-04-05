@@ -42,12 +42,12 @@ def install():
     abs_LM = os.path.abspath('LigandMapper/')
     home_dir_hidden = os.path.join(os.path.expanduser('~'),'.LigandMapper' ) 
     print('Copying:', abs_LM, 'to:', home_dir_hidden)
-    subprocess.run(['cp', '-r', abs_LM, home_dir_hidden])
+    subprocess.run(['sudo', 'cp', '-r', abs_LM, home_dir_hidden])
 
     LP_py = os.path.join(home_dir_hidden, 'LigandMapper.py')
     dest_py = os.path.join(selected_dir, 'LigandMapper.py')
     print('Creating a symbolic link from:', LP_py, 'to:', dest_py)
-    subprocess.run(['ln', '-s', LP_py, dest_py])
+    subprocess.run(['sudo', 'ln', '-s', LP_py, dest_py])
 
     test = subprocess.run(['LigandMapper.py'], shell=True, capture_output=True, text=True, check=False)
     if test.returncode != 0:

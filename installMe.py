@@ -16,14 +16,14 @@ def install():
     
     dir_dict = {}
     i = 1 
-    
+
+    print("Select a number corrsponding to the directory for installing the application.")
     for dir in list(set(path.split(':'))):
         if dir.endswith('/bin'):
             dir_dict.update({i:dir})
             print(i, ' -- ', dir)
             i+=1
 
-    print("Select a number corrsponding to the directory for installing the application.")
     if '/usr/bin' in dir_dict.values():
         print('Recomended: /usr/bin  Number: ', end='')
         for key,value in dir_dict.items():

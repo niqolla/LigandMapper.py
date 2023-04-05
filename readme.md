@@ -1,3 +1,6 @@
+
+![alt text](img/logo.png)
+
 # Installation
 
 Change directory to the folder where you downloaded the zip:

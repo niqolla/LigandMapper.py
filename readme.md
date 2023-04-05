@@ -7,7 +7,7 @@ OS: Linux or Mac
 
 This is a standalone package, however it requires python3 and java to run. 
 
-## Python3 check:
+#### Python3 check:
 ```
 python3 --version
 ```
@@ -17,7 +17,7 @@ Python 3.x.y
 ```
 (otherwise you will need to install it)
 
-## Java check:
+#### Java check:
 ```
 java --version
 ```

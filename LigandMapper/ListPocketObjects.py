@@ -1,4 +1,9 @@
+import re
+
 class Pocket():
+
+    def keep_numbers(self, string):
+        return int(re.sub(r'\D', '', string))
 
     def res_ids_to_dict(self, residue_ids):
         chain_ids = residue_ids.split(' ')
@@ -9,7 +14,7 @@ class Pocket():
             chain, id = entry.split("_")
             if chain not in chain_dict:
                 chain_dict[chain] = []
-            chain_dict[chain].append(int(id))
+            chain_dict[chain].append(self.keep_numbers(id))
         return chain_dict
 
     def surf_atoms_to_list(self, surf_atom_ids):

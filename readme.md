@@ -2,4 +2,4 @@
 
 Change directory to this folder and run:
 
-``` python3 installMe.py ```
+``` sudo python3 installMe.py ```

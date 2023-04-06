@@ -58,7 +58,7 @@ During the installation you will be prompted to enter the password for sudo beca
 
 After a successful installation you can remove the zip and the LigandMapper.py-main.zip directory. 
 
-## Manual installation
+### Manual installation ( in case instalMe.py fails )
 
 In case the installation fails:
 1) You can run the program from the folder itself because it's already an executable with a python3 shebang.

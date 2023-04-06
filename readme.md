@@ -58,6 +58,24 @@ During the installation you will be prompted to enter the password for sudo beca
 
 After a successful installation you can remove the zip and the LigandMapper.py-main.zip directory. 
 
+## Manual installation
+
+In case the installation fails:
+1) You can run the program from the folder itself because it's already an executable with a python3 shebang.
+
+2) And if you want it accessible to the command line as a command, then:
+    * choose a directory from your $PATH (echo $PATH) - ex. /usr/bin/
+    * create a symbolic link there (sudo ln -s ./LigandMapper/LigandMapper.py /usr/bin/)
+    * then add add permissions to the whole package (sudo chmod -R 777 ./)
+    * do not move or delete the folder!
+
+    ```
+    dir_path=$(find ~ -name 'LigandMapper' -type d)
+    fileLM=$dir_path"/LigandMapper.py"
+    sudo ln -s $fileLM /usr/bin/
+    sudo chmod -R 777 ./
+    ```
+  
 # Commands
 Note: The ouput is to the standard error.
 ```

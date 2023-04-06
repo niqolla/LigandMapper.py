@@ -1,4 +1,6 @@
-![alt text](img/logo-removebg-preview.png)
+<div style="text-align: right;">
+<img align='rigth' src="img/logo_no_bg.png">
+</div>
 
 # Requirements
 

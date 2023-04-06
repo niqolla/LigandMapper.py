@@ -186,6 +186,46 @@ Information from the PDB is taken in this fashion:
 | 77-78 | Element symbol | right | character |
 | 79-80 | Charge (optional) | - | character |
 
+
+## Chimera CMD file
+
+Has neccessary information to create the visualisations in chimera. The pockets are saved as selections titled "Pocket{NUM}" and colored untill the 18th pockets. 
+
+The colors are ranked the same in all output, so it can be a visual aid for quick understanding of the pockets' rankings. This is true only for the Chimera file, not for the PyMol, because in PyMol the pockets and their colors can be easily viewed in the side panel.
+
+| Color       | Rank |
+|-------------|------|
+| red         | 1    |
+| orange      | 2    |
+| yellow      | 3    |
+| green       | 4    |
+| cyan        | 5    |
+| blue        | 6    |
+| medium blue | 7    |
+| purple      | 8    |
+| hot pink    | 9    |
+| magenta     | 10   |
+| white       | 11   |
+| gray        | 12   |
+| black       | 13   |
+| tan         | 14   |
+| slate gray  | 15   |
+| dark khaki  | 16   |
+| plum        | 17   |
+| rosy brown  | 18   |
+
+run :
+```
+chimera {path}/predict_{pdb}/visualizations/chimera_{pdb}.cmd
+```
+
+## PyMol CMD file
+In PyMol the pockets and their colors are conveniently displayed in the side panel.
+run:
+```
+pymol {path}/predict_{pdb}/visualizations/{pdb}.pdb.pml
+```
+
 # References
 This software is a lightweight version of <a href='https://github.com/rdk/p2rank'>p2rank</a>. 
 * [Software article](https://doi.org/10.1186/s13321-018-0285-8) in JChem about P2Rank pocket prediction tool  

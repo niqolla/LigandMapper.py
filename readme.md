@@ -1,5 +1,4 @@
-
-![alt text](img/logo.png)
+![alt text](img/logo-removebg-preview.png)
 
 # Requirements
 

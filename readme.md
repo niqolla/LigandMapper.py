@@ -4,7 +4,7 @@
 
 # Requirements
 
-OS: Linux or Mac
+### OS: Linux or Mac
 
 This is a standalone package, however it requires python3 and java to run. 
 
@@ -120,7 +120,7 @@ LigandMapper.py --online_many 1gn3 2ew2 1gln
 ```
 
 ### Visualisation:
-* The output can directly visualised with the --chimera (-ch) and --pymol (-pm) switch, given that you have them installed on your computer, by including the switch when running the comand. Note: this only woks for the single-file methods (-l (--local) and -o (--online)); for the --directory, --online_many and --local_many you need to open the visualisation cmd files manually (see: Output below).
+* The output can directly visualised with the --chimera (-ch) and --pymol (-pm) switch, given that you have them installed on your computer, by including the switch when running the comand. Note: this only woks for the single-file methods (-l (--local) and -o (--online)); for the --directory, --online_many and --local_many you need to open the visualisation cmd files manually (see: *Output* below).
 
 Ex. 
 ```
@@ -130,7 +130,7 @@ LigandMapper.py -o 1gln -pm
 
 # Output
 
-A prediction with a file ```{pdb}.pdb``` will create the following structure in the folder in which LigandMapper.py was executed. 
+A prediction for a file ```{pdb}.pdb``` will create the following structure in the folder in which LigandMapper.py was executed. 
 
 ```
 predict_{pdb}/
@@ -142,3 +142,55 @@ predict_{pdb}/
         ├── {pdb}.pdb_points.pdb.gz
         └── {pdb}.pdb 
 ```
+
+## TSV file:
+The tsv file lists the predicted pockets in order of their score (probability, see *theoretical background*). Each pocket has the following attributes:
+
+* rank 
+* score	
+* probability 
+* sas_points - (int) number of solvent accessible surface points 
+* surf_atoms - (int) integer of the number of surface atoms
+* center_x - (float) the predicted pockets x center
+* center_y - (float) the predicted pockets y center
+* center_z - (float) the predicted pockets z center 
+* residue_ids - (py dict) the residue sequence numbers that create the pocket { Chain : [ residue sequence numbers ] }
+* residue_names - (py dict) the residue names that create the pocket { Chain : [ residue names ] }
+* residue_types - (py dict) the character of the residues that create the pocket { Chain : [ characters ] }
+
+    * 'N' represents non-polar amino acids
+    * 'P' represents polar amino acids
+    * '+' represents positively charged amino acids
+    * '-' represents negatively charged amino acids
+    * '0' a specific residue for which there is no info in the program
+
+* surf_atom_ids - (py list) the atom serial number of all the atoms that are on the surface of the pocket
+
+Information from the PDB is taken in this fashion:
+| Columns | Data | Justification | Data Type |
+| ------- | ---- | ------------- | --------- |
+| 1-4 | "ATOM" | left | character |
+| 7-11 | Atom serial number | right | integer |
+| 13-16 | Atom name | left* | character |
+| 17 | Alternate location indicator | - | character |
+| 18-20 | Residue name | right | character |
+| 22 | Chain identifier | - | character |
+| 23-26 | Residue sequence number | right | integer |
+| 27 | Code for insertions of residues | - | character |
+| 31-38 | X orthogonal Angstrom coordinate | right | floating |
+| 39-46 | Y orthogonal Angstrom coordinate | right | floating |
+| 47-54 | Z orthogonal Angstrom coordinate | right | floating |
+| 55-60 | Occupancy | right | floating |
+| 61-66 | Temperature factor | right | floating |
+| 73-76 | Segment identifier (optional) | left | character |
+| 77-78 | Element symbol | right | character |
+| 79-80 | Charge (optional) | - | character |
+
+# References
+This software is a lightweight version of <a href='https://github.com/rdk/p2rank'>p2rank</a>. 
+* [Software article](https://doi.org/10.1186/s13321-018-0285-8) in JChem about P2Rank pocket prediction tool  
+ Krivak R, Hoksza D. ***P2Rank: machine learning based tool for rapid and accurate prediction of ligand binding sites from protein structure.*** Journal of Cheminformatics. 2018 Aug.
+* [Conference paper](https://doi.org/10.1007/978-3-319-21233-3_4) introducing P2Rank prediction algorithm  
+ Krivak R, Hoksza D. ***P2RANK: Knowledge-Based Ligand Binding Site Prediction Using Aggregated Local Features.*** International Conference on Algorithms for Computational Biology 2015 Aug 4 (pp. 41-52). Springer
+* [Research article](https://doi.org/10.1186/s13321-015-0059-5) in JChem about PRANK rescoring algorithm  
+ Krivak R, Hoksza D. ***Improving protein-ligand binding site prediction accuracy by classification of inner pocket points using local features.*** Journal of Cheminformatics. 2015 Dec.

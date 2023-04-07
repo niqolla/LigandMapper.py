@@ -100,6 +100,11 @@ optional arguments:
   -ch, --chimera        Open chimera immediately when file is ready to be visualised. Only applies to local and online SINGLE file.
   -pm, --pymol          Open pymol immediately when file is ready to be visualised. Only applies to local and online SINGLE file.
 ```
+## Tutorials
+Tutorials can be found 
+<a href='https://formacio.bq.ub.edu/~u217733/LigandMapper/tutorials/tutorials.pdf'>
+here
+</a>.
 
 ## Examples
 

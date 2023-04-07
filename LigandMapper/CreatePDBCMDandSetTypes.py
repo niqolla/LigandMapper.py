@@ -6,7 +6,6 @@ def pdb_dict_from_pdb_file(out_dir, pdb):
         pdb = pdb[:-4]
     if '/' in pdb:
         pdb = str(pdb.split('/')[-1])
-        print(pdb)
 
     filename = f'{out_dir}/visualizations/data/{pdb}.pdb'
     
@@ -34,7 +33,7 @@ def create_pdb_cmd_file_and_set_residue_types(out_dir, pdb):
         pdb = pdb[:-4]
     if '/' in pdb:
         pdb = str(pdb.split('/')[-1])
-        print(pdb)
+
     filename = f'{out_dir}/visualizations/data/{pdb}.pdb'
     pdb_dict = pdb_dict_from_pdb_file(out_dir, pdb)
     out_cmd_file = f'{out_dir}/visualizations/chimera_{pdb}.cmd'

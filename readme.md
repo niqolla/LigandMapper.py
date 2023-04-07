@@ -162,7 +162,9 @@ predict_{pdb}/
 ```
 
 ## TSV file:
-The tsv file lists the predicted pockets in order of their score (probability, see *theoretical background*). Each pocket has the following attributes:
+The tsv file lists the predicted pockets in order of their score (probability, see 
+<a href='https://formacio.bq.ub.edu/~u217733/LigandMapper/tutorials/theory.pdf'>*theoretical background*</a>
+). Each pocket has the following attributes:
 
 * rank 
 * score	

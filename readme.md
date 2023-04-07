@@ -146,6 +146,9 @@ LigandMapper.py -l 1gln.pdb -ch
 LigandMapper.py -o 1gln -pm
 ```
 
+## General structure of the code
+ <img src='./img/GeneralStructureOfCode_rmbg.png'>
+
 # Output
 
 A prediction for a file ```{pdb}.pdb``` will create the following structure in the folder in which LigandMapper.py was executed. 
@@ -254,3 +257,4 @@ This software is a lightweight version of <a href='https://github.com/rdk/p2rank
  Krivak R, Hoksza D. ***P2RANK: Knowledge-Based Ligand Binding Site Prediction Using Aggregated Local Features.*** International Conference on Algorithms for Computational Biology 2015 Aug 4 (pp. 41-52). Springer
 * [Research article](https://doi.org/10.1186/s13321-015-0059-5) in JChem about PRANK rescoring algorithm  
  Krivak R, Hoksza D. ***Improving protein-ligand binding site prediction accuracy by classification of inner pocket points using local features.*** Journal of Cheminformatics. 2015 Dec.
+

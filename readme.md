@@ -256,10 +256,11 @@ pymol {path}/predict_{pdb}/visualizations/{pdb}.pdb.pml
 
 # References
 This software is a lightweight version of <a href='https://github.com/rdk/p2rank'>p2rank</a>. 
-* [Software article](https://doi.org/10.1186/s13321-018-0285-8) in JChem about P2Rank pocket prediction tool  
- Krivak R, Hoksza D. ***P2Rank: machine learning based tool for rapid and accurate prediction of ligand binding sites from protein structure.*** Journal of Cheminformatics. 2018 Aug.
-* [Conference paper](https://doi.org/10.1007/978-3-319-21233-3_4) introducing P2Rank prediction algorithm  
- Krivak R, Hoksza D. ***P2RANK: Knowledge-Based Ligand Binding Site Prediction Using Aggregated Local Features.*** International Conference on Algorithms for Computational Biology 2015 Aug 4 (pp. 41-52). Springer
-* [Research article](https://doi.org/10.1186/s13321-015-0059-5) in JChem about PRANK rescoring algorithm  
- Krivak R, Hoksza D. ***Improving protein-ligand binding site prediction accuracy by classification of inner pocket points using local features.*** Journal of Cheminformatics. 2015 Dec.
-
+* Krivak R, Hoksza D. [*P2Rank: machine learning based tool for rapid and accurate prediction of ligand binding sites from protein structure.*](https://doi.org/10.1186/s13321-018-0285-8) Journal of Cheminformatics. 2018 Aug.
+* Capra JA, Laskowski RA, Thornton JM, Singh M, Funkhouser TA. *Predicting protein ligand binding sites by combining evolutionary sequence conservation and 3D structure.* PLoS
+* Connolly M. *Solvent-accessible surfaces of proteins and nucleic acids.* Science. 1983;221(4612):709–13.
+* Huang B, Schroeder M. [*LIGSITEcsc: predicting ligand binding sites using the Connolly surface and degree of conservation.*](10.1186/1472-6807-6-19) BMC Struct Biol. 2006 Sep 24;6:19.
+* Krivák R, Hoksza D. [*Improving protein-ligand binding site prediction accuracy by classification of inner pocket points using local features.*](10.1186/s13321-015-0059-5) J Cheminform. 2015 Apr 1;7:12.
+* Le Guilloux V, Schmidtke P, Tuffery P. [*Fpocket: an open source platform for ligand pocket detection.*](10.1186/1471-2105-10-168) BMC Bioinformatics. 2009 Jun 2;10:168. 
+* RICHARDS, E M. (1977). *Ann. Rev. Biophys. Bioeng.* 6, 151-176.
+* Zheng X, Gan L, Wang E, Wang J. [*Pocket-based drug design: exploring pocket space.*](10.1208/s12248-012-9426-6) AAPS J. 2013 Jan;15(1):228-41.

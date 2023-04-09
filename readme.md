@@ -103,8 +103,7 @@ optional arguments:
 ## Tutorials
 Tutorials can be found 
 <a href='https://formacio.bq.ub.edu/~u217733/LigandMapper/tutorials/tutorials.pdf'>
-here
-</a>.
+here</a>.
 
 ## Examples
 
@@ -253,6 +252,17 @@ run:
 ```
 pymol {path}/predict_{pdb}/visualizations/{pdb}.pdb.pml
 ```
+
+# Theoretical background
+The theorethical background can be found 
+<a href='https://formacio.bq.ub.edu/~u217733/LigandMapper/tutorials/theory.pdf'>
+here</a>.
+
+# Analysis
+Analysis of the perfomance can be found 
+<a href='https://formacio.bq.ub.edu/~u217733/LigandMapper/tutorials/analysis.pdf'>
+here</a>.
+
 
 # References
 This software is a lightweight version of <a href='https://github.com/rdk/p2rank'>p2rank</a>. 

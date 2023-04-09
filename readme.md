@@ -1,5 +1,5 @@
 <div style="text-align: right;">
-<img align='rigth' src="img/logo_no_bg.png">
+<a href="https://formacio.bq.ub.edu/~u217733/LigandMapper/"><img align='rigth' src="img/logo_no_bg.png" ></a>
 </div>
 
 # Requirements
